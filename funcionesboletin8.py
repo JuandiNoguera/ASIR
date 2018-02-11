@@ -6,3 +6,6 @@ def calcular_coste(segundos,coste):
 	facturacion=coste*segundos
 	return facturacion
 
+def convertir_euros(centimos):
+	euros=centimos/100
+	return euros
