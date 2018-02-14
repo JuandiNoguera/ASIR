@@ -23,4 +23,4 @@ for i in duracioncomunicaciones:
 for i in duracioncomunicaciones:
 	print("El coste de la llamada {} es {} €".format(i[0],convertir_euros(int(calcular_coste(i[1],tarifa)))))
 
-print("La factura total es de {} €".format(convertir_euros(calcular_coste(segundostotales,tarifa))))
+print("La factura total es {} €".format(convertir_euros(calcular_coste(segundostotales,tarifa))))
