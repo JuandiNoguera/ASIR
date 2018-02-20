@@ -1,3 +1,9 @@
+'''Realiza un programa que te informe de cuanto vale cada comunicación y el 
+total de dinero de todas las comunicaciones. En esta ocasión los datos de la duración 
+de las comunicaciones y la tarifa por segundos se encuentran en este fichero donde 
+en la primera línea te encuentras la tarifa, y en las restantes la duración de cada 
+una de las comunicaciones expresadas en horas, minutos y segundos.'''
+
 from funcionesboletin8 import pasar_segundos, calcular_coste, convertir_euros
 
 with open("comunicaciones.txt", "r") as doc:
