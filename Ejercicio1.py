@@ -1,3 +1,9 @@
+'''Crea un programa que te pregunte por teclado la tarifa por segundos en céntimos, 
+el número de comunicaciones que se han realizado, y te vaya pidiendo horas, minutos 
+y segundo que han durado cada una de las comunicaciones. Finalmente te mostrará cuanto 
+ha costado cada una de las comunicaciones y el total de dinero de todas las 
+comunicaciones.'''
+
 from funcionesboletin8 import pasar_segundos, calcular_coste, convertir_euros
 
 tarifa=int(input("Dime el coste por segundo en centimos: "))
