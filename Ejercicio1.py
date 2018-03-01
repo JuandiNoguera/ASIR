@@ -21,7 +21,7 @@ for i in range(comunicaciones):
 	listallamadas.append(llamadas)
 	listallamadas.append(pasar_segundos(hora,minuto,segundo))
 	duracioncomunicaciones.append(listallamadas)
-	llamada+=1
+	llamadas+=1
 
 for i in duracioncomunicaciones:
 	segundostotales+=i[1]

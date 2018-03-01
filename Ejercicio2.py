@@ -21,7 +21,7 @@ for elem in l1[0]:
 	centimo = 0
 	if elem.isdigit():
 		centimo += int(elem)
-	l1[0] = cent
+	l1[0] = centimo
 tarifa = centimo
 l1.pop(0)
 for elem in l1:
@@ -29,10 +29,10 @@ for elem in l1:
 	horas = int(elem.split(':')[0])
 	minutos = int(elem.split(':')[1])
 	segundos = int(elem.split(':')[2])
-	segun=pasar_a_segundos(horas, minutos, segundos)
+	segun=pasar_segundos(horas, minutos, segundos)
 	centimos=calcular_coste(segun,tarifa)
 	contador+=centimos
-	euros=convertir_a_euros(centimos)
+	euros=convertir_euros(centimos)
 	print("El coste por la llamada {} es {} €.".format(acumulador,euros))
 
 factura=convertir_a_euros(contador)
