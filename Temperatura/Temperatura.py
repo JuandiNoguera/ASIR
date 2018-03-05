@@ -14,18 +14,17 @@ for cp in cps:
 	ids=valor.split("-id")
 	l1.append(ids[0])
 	l2.append(ids[1])
-	print("Selecciona un municipio",l1)
 
 municipios=input("Introduce el nombre del municipio: ")
-url=etree.parse("http://www.aemet.es/xml/municipios/localidad_41038.xml")
+cadena=municipios.lower().replace(" ","-")
 
 for x,y in zip(l1,l2):
-	if municipios==x:
+	if cadena==x:
 		codigo=y
 		url=etree.parse("http://www.aemet.es/xml/municipios/localidad_"+codigo+".xml")
 
-	maxima=url.find("prediccion/dia/temperatura/maxima")
-	minima=url.find("prediccion/dia/temperatura/minima")
+		maxima=url.find("prediccion/dia/temperatura/maxima")
+		minima=url.find("prediccion/dia/temperatura/minima")
 
 print("Las maxima son",maxima.text)
 print("Las minima son",minima.text)
